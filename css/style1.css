@@ -49,7 +49,7 @@
     grid-row: 1 / 2;
   }
   
-  form.sign-up-form {
+  form.sign-up-form {               /* to hide the sign up form and show the sign in form*/
     opacity: 0;
     z-index: 1;
   }
@@ -126,13 +126,33 @@
   }
   
   .social-icon:hover {
-    color: #4481eb;
-    border-color: #4481eb;
+    color:  #d4a81e;
+    border-color: #f7ba06;
   }
   
-  .btn {
+  .btn {                /*Sign in Button property*/
     width: 150px;
-    background-color: #5995fd;
+    background-color: #d4a81e;
+    border: none;
+    outline: none;
+    height: 49px;
+    border-radius: 49px;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin: 10px 0;
+    cursor: pointer;
+    transition: 0.5s;
+  }
+
+  .btn:hover {
+    background-color: #d6bd71;
+  }
+
+
+  .btn1 {               /*Sign up Button property*/
+    width: 150px;
+    background-color: #184fc5;
     border: none;
     outline: none;
     height: 49px;
@@ -145,9 +165,10 @@
     transition: 0.5s;
   }
   
-  .btn:hover {
-    background-color: #4d84e2;
+  .btn1:hover {
+    background-color: #7189d6;
   }
+ 
   .panels-container {
     position: absolute;
     height: 100%;
@@ -166,11 +187,14 @@
     top: -10%;
     right: 48%;
     transform: translateY(-50%);
-    background-image: linear-gradient(-45deg, #4481eb 0%, #04befe 100%);
+    background-image: linear-gradient(-45deg, #d4a81e 0%, #04befe 100%);
     transition: 1.8s ease-in-out;
     border-radius: 50%;
     z-index: 6;
   }
+
+
+
   
   .image {
     width: 100%;
@@ -295,7 +319,7 @@
       justify-content: space-around;
       align-items: center;
       padding: 2.5rem 8%;
-      grid-column: 1 / 2;
+      grid-column: 1 / 2;     /* each form is starting from colum line 1 to column line 2 and from now line 1 to row line 2*/
     }
   
     .right-panel {
@@ -304,7 +328,7 @@
   
     .left-panel {
       grid-row: 1 / 2;
-    }
+    }                       /* each form is starting from colum line 1 to column line 2 and from now line 1 to row line 2*/
   
     .image {
       width: 200px;
